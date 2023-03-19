@@ -15,8 +15,8 @@ function SignIn() {
       <div className='form-group'>
         <label>Password</label>
         <input type='password' 
-
         />
+      <button>Sign in</button>   
 
 
       </div>
