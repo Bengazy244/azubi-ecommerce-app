@@ -4,8 +4,9 @@ function SignIn() {
   return (
     <div>
       <form>
-      <div className='form-group'>
-        <label>Email Address</label>
+        <div className='form-group'>
+          <h2>Sign in</h2>
+        <label htmlFor='email'>Email Address</label>
         <input
         type='email'
         className='form-control'   
