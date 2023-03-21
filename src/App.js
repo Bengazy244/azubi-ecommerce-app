@@ -24,8 +24,7 @@ function App() {
         password: details.password,
       });
     } else {
-      console.log("Details do not match!");
-      SetError("Details do not match");
+      SetError`("Details do not match! Please <a href='/register</a>")`;
     }
   };
 
