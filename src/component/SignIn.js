@@ -1,44 +1,43 @@
 import React, { useState } from "react";
 
-function SignIn({ Login, error }) {
-  const [details, setDetails] = useState({ email: "", password: "" });
+const SignIn = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const submitHandler = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    Login(details);
+    if (username === "" || password === "") {
+      setErrorMsg("Please fill in all fields");
+    } else {
+      // send login data to server
+      console.log("Submitting data to server");
+    }
   };
-  return (
-    <form onSubmit={submitHandler}>
-      <div className="form-inner"></div>
-      <h2>Sign in</h2>
-      {error !== "" ? <div className="error">{error}</div> : ""}
 
-      <div className="form-group">
-        <label htmlFor="email">Email Address</label>
+  return (
+    <div className="login-container">
+      <form onSubmit={handleSubmit} className="login-form">
+        <h2>Login</h2>
+        {errorMsg && <p className="error-msg">{errorMsg}</p>}
+        <label htmlFor="username">Username:</label>
         <input
-          type="email"
-          name="email"
-          id="email"
-          onChange={(e) => setDetails({ ...details, email: e.target.value })}
-          value={details.email}
+          type="text"
+          id="username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
         />
-      </div>
-      <div className="form-group">
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Password:</label>
         <input
           type="password"
-          name="password"
           id="password"
-          onChange={(e) => setDetails({ ...details, password: e.target.value })}
-          value={details.password}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
-      </div>
-      <div className="form-group">
-        <input type="submit" value="Sign in" />
-      </div>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
-}
+};
 
 export default SignIn;
