@@ -119,6 +119,8 @@ a {
   box-sizing: border-box;
 }
 
+/* Home Page */
+
 .home-page {
   margin: 0 auto;
   max-width: 960px;
@@ -187,4 +189,48 @@ a {
 
 .add-to-cart:hover {
   background-color: #3e8e41;
+}
+
+/* Nav Bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: #050404;
+  padding: 10px 20px;
+  border-bottom: 5px solid #d2d2d2;
+}
+
+.navbar__logo img {
+  height: 40px;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar__links li {
+  margin: 0 10px;
+}
+
+.navbar__links a {
+  color: #fff;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar__login button {
+  background-color: #001066;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
