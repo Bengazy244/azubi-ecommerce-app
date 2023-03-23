@@ -148,7 +148,8 @@ a {
 }
 
 .product-card h2 {
-  font-size: 20px;
+  text-align: start;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 

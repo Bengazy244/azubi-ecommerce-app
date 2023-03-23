@@ -2,7 +2,7 @@ const product_card = [
   {
     id: 1,
     product_name: "Men Shirt",
-    description: "Slim Fit Beautiful Shirt",
+    description: "Lorem ipsum dolor sit ame",
     currency: "$",
     price: 29,
     thumb: "./images/1.png",

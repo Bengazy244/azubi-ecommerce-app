@@ -5,7 +5,12 @@ import "../App.css";
 function HomePage() {
   return (
     <div className="home-page">
-      <input type="text" name="search" className="search" />
+      <input
+        type="text"
+        name="search"
+        className="search"
+        placeholder="Search products"
+      />
       <div className="product-list">
         {product_card.map((product) => (
           <div className="product-card" key={product.id}>
