@@ -5,7 +5,7 @@ import "../App.css";
 function HomePage() {
   return (
     <div className="home-page">
-      <h1>Welcome to our Ecommerce Store</h1>
+      <input type="text" name="search" id="search" />
       <div className="product-list">
         {product_card.map((product) => (
           <div className="product-card" key={product.id}>
