@@ -26,7 +26,7 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="registration-page">
+    <div className="form-container">
       <h1>Create an Account</h1>
 
       <form onSubmit={handleSubmit}>
