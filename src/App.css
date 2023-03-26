@@ -37,6 +37,87 @@
   }
 }
 
+
+.form-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-header p {
+  margin-right: 50px;
+}
+
+.form-header a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.signin-container {
+  display: inline-block;
+  background-color: rgb(211, 211, 211);
+  padding: 8px 55px;
+  border-radius: 4px;
+}
+
+.signin-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.form-container h3 {
+  margin-left: 140px;
+  margin-bottom: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  margin-left: 10px 0;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+button[type="submit"]:hover {
+  background-color: darkblue;
+=======
 /* Sign in Css */
 .login-container {
   display: flex;
@@ -191,46 +272,3 @@ a {
   background-color: #3e8e41;
 }
 
-/* Nav Bar */
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  color: #050404;
-  padding: 10px 20px;
-  border-bottom: 5px solid #d2d2d2;
-}
-
-.navbar__logo img {
-  height: 40px;
-}
-
-.navbar__links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.navbar__links li {
-  margin: 0 10px;
-}
-
-.navbar__links a {
-  color: #fff;
-  text-decoration: none;
-  color: #000;
-}
-
-.navbar__login button {
-  background-color: #001066;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
