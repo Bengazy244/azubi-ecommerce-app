@@ -26,40 +26,49 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="form-container">
-      <h1>Create an Account</h1>
+    <>
+      <div className="form-header">
+        <p>Already have an account?</p>
+        <div className="signin-container">
+          <a href="#">Sign in</a>
+        </div>
+      </div>
 
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email Address:</label>
+      <div className="form-container">
+        <h3>Create an Account</h3>
 
-        <input
-          type="text"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="email">Email Address:</label>
 
-        <label htmlFor="password">Password:</label>
+          <input
+            type="text"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <label htmlFor="password">Password:</label>
 
-        <label htmlFor="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-        <input
-          type="password"
-          name="confirm-password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-        />
+          <label htmlFor="confirm-password">Confirm Password:</label>
 
-        <button type="submit">Create an Account</button>
-      </form>
-    </div>
+          <input
+            type="password"
+            name="confirm-password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+
+          <button type="submit">Create an Account</button>
+        </form>
+      </div>
+    </>
   );
 };
 export default RegisterPage;
