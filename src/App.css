@@ -37,7 +37,6 @@
   }
 }
 
-
 .form-header {
   position: absolute;
   top: 0;
@@ -115,9 +114,10 @@ button[type="submit"] {
   max-width: 300px;
 }
 
-button[type="submit"]:hover {
+.button[type="submit"]:hover {
   background-color: darkblue;
-=======
+}
+
 /* Sign in Css */
 .login-container {
   display: flex;
@@ -271,4 +271,3 @@ a {
 .add-to-cart:hover {
   background-color: #3e8e41;
 }
-
