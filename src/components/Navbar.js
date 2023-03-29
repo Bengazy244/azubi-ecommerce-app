@@ -10,7 +10,8 @@ const Navbar = () => {
       </Link>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/cart">Cart</NavLink>
-      <Link to="/login">Login</Link>
+      <Link to="/RegisterPage">Register</Link>
+      <Link to="/SignIn">Signin</Link>
     </div>
   );
 };

@@ -30,7 +30,7 @@ const RegisterPage = () => {
       <div className="form-header">
         <p>Already have an account?</p>
         <div className="signin-container">
-          <a href="#">Sign in</a>
+          <a href={"HomePage"}>Sign in</a>
         </div>
       </div>
 
