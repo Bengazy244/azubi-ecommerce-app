@@ -10,6 +10,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+    
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/Cart" element={<Cart />}></Route>

@@ -15,13 +15,14 @@ code {
 .navbar {
   background: lavender;
   padding: 12px;
-  overflow: auto;
+  
 }
 
 a {
   margin: 5px;
   text-decoration: none;
   font-size: 17px;
+  
 }
 
 a.active {

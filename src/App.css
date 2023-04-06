@@ -103,7 +103,7 @@ input {
 
 button[type="submit"] {
   padding: 10px;
-  background-color: blue;
+  background-color: rgb(54, 54, 101);
   color: white;
   border: none;
   border-radius: 5px;
@@ -167,6 +167,8 @@ a {
   height: 80px;
   background-color: #ffffff;
   padding: 0 32px;
+  border-bottom: 10px solid #ccc;
+  
 }
 
 .navbar__logo img {
@@ -270,4 +272,8 @@ a {
 
 .add-to-cart:hover {
   background-color: #3e8e41;
+}
+
+.searchbar {
+  width: 100%;
 }
