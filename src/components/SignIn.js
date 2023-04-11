@@ -4,15 +4,27 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ 
+
+  function handleSubmit(event) {
+    
+    event.preventDefault();
+
     if (username === "" || password === "") {
       setErrorMsg("Please fill in all fields");
     } else {
       // send login data to server
       console.log("Submitting data to server");
     }
-  };
+
+    var user={
+      username:username,
+      password:password
+
+    }
+
+    console.log(user)
+  }
 
   return (
     <div className="login-container">
