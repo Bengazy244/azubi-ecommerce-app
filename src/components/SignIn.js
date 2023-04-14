@@ -26,6 +26,14 @@ const SignIn = () => {
     console.log(user)
   }
 
+  function addtolocalstorage(){
+
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+
+
+  }
+
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit} className="login-form">
@@ -45,7 +53,7 @@ const SignIn = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button onClick={addtolocalstorage} type="submit">Submit</button>
       </form>
     </div>
   );
